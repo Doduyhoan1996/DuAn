@@ -15,8 +15,8 @@ if (isset($_POST['height']) && isset($_POST['weight'])){
 }
 ?>
 <div class="container">
+    <h1>Tính chỉ số BMI</h1>
     <div class="row">
-        <h1>Tính chỉ số BMI</h1>
         <form name="bmi" action="" method="post">
             <div class="form-group">
                 <label>Chiều Cao (m)</label>
