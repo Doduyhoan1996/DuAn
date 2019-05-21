@@ -13,22 +13,22 @@ if (isset($_POST['height']) && isset($_POST['weight'])){
     $weight = (float) $_POST['weight'];
     $bmi =$weight/($height*$height);
 
-    if($bmi<18.5){
+    if ($bmi<18.5) {
         $pl="Gầy";
         $benh="Thấp";
-    }elseif (18.5 <=$bmi && $bmi <= 24.9){
+    } elseif ( (18.5 <= $bmi) && ($bmi <= 24.9) ){
         $pl="Bình Thường";
         $benh="TB";
-    }elseif (25 <=$bmi && $bmi <= 29.9){
+    } elseif ( (25 >= $bmi) && ($bmi <= 29.9) ){
         $pl="Hơi Béo";
         $benh="Cao";
-    }elseif (30 <= $bmi && $bmi <= 34.9){
+    } elseif ( (30 >= $bmi) && ($bmi <= 34.9) ){
         $pl="Béo Cấp độ 1";
         $benh="Cao";
-    }elseif (35 <= $bmi && $bmi <= 39.9) {
+    } elseif ( (35 >= $bmi) && ($bmi <= 39.9)) {
         $pl = "Béo Cấp độ 2";
         $benh = "Rất Cao";
-    }elseif ( $bmi > 40.9) {
+    } elseif ($bmi > 40.9) {
         $pl = "Béo Cấp độ 3";
         $benh = "Nguy hiểm";
     }
